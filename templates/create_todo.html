@@ -1,0 +1,6 @@
+<h1>Добавить задачу</h1>
+<form action="/create_todo/" method="POST">
+    {% csrf_token %}
+    {{ form_todo.as_p }}
+    <button type="sumbit">Добавить</button>
+</form>
